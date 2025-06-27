@@ -1,0 +1,29 @@
+# 각 파일별 설명
+- eslint.config.mjs
+  => ESLint설정 파일
+     코드 스타일, 문법 오류, best practice 위반 등을 자동으로 검사해주는 도구인 ESLint의 설정을 담고 있음
+
+- next.config.ts
+  => Next.js의 전역 설정 파일
+
+- next-env.d.ts
+  => Next.js가 TypeScript와 잘 작동하도록 도오ㅘ주는 자동 생성 타입 선언 파일
+
+- package.json
+  => 프로젝트의 의존성, 스크립트, 메타정보를 담고있는 핵심 파일
+
+- package-lock.json
+  => package.json에 명시된 의존성들의 정확한 버전과 설치 트리를 기록한 파일
+
+- postcss.config.mjs
+  => Tailwind CSS 설정
+
+- sang-won-portfolio.iml
+  => IntelliJ, WebStorm 같은 JetBrains 계열 IDE에서 사용하는 프로젝트 설정 파일
+
+# npm 설치
+- lucide react (아이콘 라이브러리)
+  => npm install lucide-react@^0.294.0
+
+- framer-motion
+  => npm install framer-motion@^10.16.16

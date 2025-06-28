@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import {ThemeToggle} from "@/components/ui/theme-toggle";
 import {Navigation} from "@/components/ui/navigation";
 import {FirstSection} from "@/components/sections/first-section";
+import {AboutSection} from "@/components/sections/about-section";
 
 // 스크롤 컴포넌트 구현
 const ScrollIndicator = () => {
@@ -52,9 +53,10 @@ export default function Home() {
         * */
         <div className={`min-h-screen transition-colors duration-300 ${darkMode ? "dark bg-gray-900" : "bg-white"}`}>
             <ScrollIndicator/>
-            <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode}/>
-            <Navigation />
-            <FirstSection />
+            <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode}/> {/* 다크모드 버튼 */}
+            <Navigation/> {/* 사이드 네비게이션 */}
+            <FirstSection/> {/* 첫번째 화면 */}
+            <AboutSection darkMode={darkMode} /> {/* About Me 화면 */}
         </div>
     );
 }

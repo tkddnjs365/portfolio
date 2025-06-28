@@ -5,6 +5,7 @@ import {AnimatePresence, motion} from "framer-motion"
 import {ArrowRight, ChevronDown, ChevronLeft, ChevronRight, ChevronUp} from "lucide-react"
 import type {TechSystem} from "@/lib/experience-data"
 import {detailedExperiences} from "@/lib/experience-data"
+import Image from "next/image";
 
 interface ExperienceSectionProps {
     darkMode: boolean
@@ -19,11 +20,13 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
     const [selectedFeatureIndex, setSelectedFeatureIndex] = useState(0)
     // 선택된 이미지의 인덱스
     const [selectedImageIndex, setSelectedImageIndex] = useState(0)
+
     // 현재 선택된 기능 객체
     const currentFeature = selectedSystem?.features[selectedFeatureIndex]
-    // 현재 선택된 이미지
+    // 현재 기능에서 선택된 이미지 객체
     const currentImage = currentFeature?.images[selectedImageIndex]
 
+    /** 경력 항목 클릭 → 접기/펼치기 토글 */
     const toggleExperience = (index: number) => {
         // 이미 펼쳐진 항목을 다시 클릭하면 닫음, 아니면 해당 항목을 펼침
         setExpandedExperience(expandedExperience === index ? null : index)
@@ -32,27 +35,25 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
         setSelectedImageIndex(0)
     }
 
-    // 시스템 항목을 클릭했을 때 해당 시스템으로 선택
+    /** 시스템 탭 클릭 → 해당 시스템 선택 */
     const selectSystem = (system: TechSystem) => {
         setSelectedSystem(system)
         setSelectedFeatureIndex(0)
         setSelectedImageIndex(0)
     }
 
-    /* 기능 버튼 클릭 */
+    /** 기능 항목 클릭 → 해당 기능 선택 */
     const selectFeature = (index: number) => {
         setSelectedFeatureIndex(index)
         setSelectedImageIndex(0)
     }
 
-    /* 이전 이미지 버튼 */
+    /** 이미지 좌/우 버튼 클릭 */
     const prevImage = () => {
         if (selectedImageIndex > 0) {
             setSelectedImageIndex(selectedImageIndex - 1)
         }
     }
-
-    /* 다음 이미지 버튼 */
     const nextImage = () => {
         // 시스템이 존재하고, 유효한 기능 인덱스일 때
         if (selectedSystem && selectedFeatureIndex < selectedSystem.features.length) {
@@ -65,6 +66,7 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
         }
     }
 
+    // 첫 번째 항목 펼쳐졌을 때 시스템 자동 세팅
     useEffect(() => {
         if (expandedExperience === 0 && detailedExperiences[0]?.systems?.[0]) {
             setSelectedSystem(detailedExperiences[0].systems[0])
@@ -74,6 +76,7 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
     return (
         <section id="experience" className={`py-20 ${darkMode ? "bg-gray-800" : "bg-white"}`}>
             <div className="container mx-auto px-4">
+                {/* 상단 타이틀 */}
                 <motion.div
                     initial={{opacity: 0, y: 50}}
                     whileInView={{opacity: 1, y: 0}}
@@ -88,6 +91,7 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                     </p>
                 </motion.div>
 
+                {/* 경력 리스트 */}
                 <div className="max-w-6xl mx-auto">
                     {detailedExperiences.map((exp, index) => (
                         <motion.div
@@ -124,7 +128,7 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                     <h4 className="text-lg font-semibold mb-2">{exp.position}</h4>
                                     <p className="mb-4 opacity-80">{exp.description}</p>
 
-                                    {/* 업무 설명 */}
+                                    {/* 주요 성과 */}
                                     <div className="space-y-2 mb-4">
                                         {exp.achievements.map((achievement, i) => (
                                             <div key={i} className="flex items-center">
@@ -251,11 +255,14 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                                                         <div className="relative mb-4">
                                                                             <div
                                                                                 className="relative overflow-hidden rounded-lg bg-gray-200 aspect-video">
-                                                                                <img
+                                                                                <Image
                                                                                     src={currentImage?.src || "/placeholder.svg"}
-                                                                                    alt={currentImage?.alt}
-                                                                                    className="w-full h-full object-cover"
+                                                                                    alt={currentImage?.alt || "image"}
+                                                                                    width={800} // 실제 이미지 너비
+                                                                                    height={450} // 실제 이미지 높이
+                                                                                    className="w-full h-full object-cover rounded-lg"
                                                                                 />
+
 
                                                                                 {/* 이미지 네비게이션 
                                                                                     이미지가 2건 이상인경우 하단에 이미지 네비게이션 추가
@@ -306,11 +313,14 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                                                                                 : "border-gray-300 hover:border-gray-400"
                                                                                         }`}
                                                                                     >
-                                                                                        <img
+                                                                                        <Image
                                                                                             src={image.src || "/placeholder.svg"}
-                                                                                            alt={image.alt}
-                                                                                            className="w-full h-full object-cover"
+                                                                                            alt={image.alt || "이미지 설명"}
+                                                                                            width={128} // 썸네일 가로폭 (원하는 사이즈로 조절)
+                                                                                            height={80}  // 썸네일 세로높이
+                                                                                            className="w-full h-full object-cover rounded-md"
                                                                                         />
+
                                                                                     </button>
                                                                                 ))}
                                                                             </div>

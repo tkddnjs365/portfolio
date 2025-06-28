@@ -5,6 +5,7 @@ import {ThemeToggle} from "@/components/ui/theme-toggle";
 import {Navigation} from "@/components/ui/navigation";
 import {FirstSection} from "@/components/sections/first-section";
 import {AboutSection} from "@/components/sections/about-section";
+import {ExperienceSection} from "@/components/sections/experience-section";
 
 // 스크롤 컴포넌트 구현
 const ScrollIndicator = () => {
@@ -56,7 +57,8 @@ export default function Home() {
             <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode}/> {/* 다크모드 버튼 */}
             <Navigation/> {/* 사이드 네비게이션 */}
             <FirstSection/> {/* 첫번째 화면 */}
-            <AboutSection darkMode={darkMode} /> {/* About Me 화면 */}
+            <AboutSection darkMode={darkMode}/> {/* About Me 화면 */}
+            <ExperienceSection darkMode={darkMode}/> {/* 경력 & 시스템 */}
         </div>
     );
 }

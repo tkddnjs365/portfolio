@@ -22,3 +22,17 @@ export interface Certification {
   icon: ElementType
   color: string
 }
+
+/* project-outline */
+export interface Category {
+  id: string
+  label: string
+  icon: ElementType
+}
+export interface Project {
+  title: string
+  category: string
+  description: string
+  technologies: string[]
+  achievements: string[]
+}

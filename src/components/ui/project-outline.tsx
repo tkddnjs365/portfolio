@@ -3,6 +3,7 @@
 import {AnimatePresence, motion} from "framer-motion"
 import {categories, projects} from "@/lib/data";
 import {useState} from "react";
+import {Check} from "lucide-react";
 
 interface ProjectOutlineProps {
     darkMode: boolean
@@ -81,6 +82,14 @@ export const ProjectOutline = ({darkMode}: ProjectOutlineProps) => {
 
                             <div>
                                 <h4 className={"font-semibold mb-2"}>주요 성과:</h4>
+                                <ul className="space-y-1">
+                                    {project.achievements.map((achievement, i) => (
+                                        <li key={i} className="flex items-center">
+                                            <Check className="text-green-500 mr-2 w-4 h-4"/>
+                                            <span className="text-sm">{achievement}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </motion.div>
                     ))}

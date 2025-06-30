@@ -52,25 +52,25 @@ export const skillCategories: SkillCategory[] = [
 
 export const certifications: Certification[] = [
     {
+        name: "운전면허 1종",
+        issuer: "경찰청",
+        date: "2015.05",
+        icon: Car,
+        color: "from-purple-500 to-purple-600",
+    },
+    {
         name: "정보처리기능사",
         issuer: "한국산업인력공단",
-        date: "2024.12.01",
+        date: "2016.03",
         icon: Code,
         color: "from-blue-500 to-blue-600",
     },
     {
         name: "SQLD",
         issuer: "한국데이터산업진흥원",
-        date: "2024.12.01",
+        date: "2022.06",
         icon: Database,
         color: "from-green-500 to-green-600",
-    },
-    {
-        name: "운전면허 1종",
-        issuer: "경찰청",
-        date: "2024.12.01",
-        icon: Car,
-        color: "from-purple-500 to-purple-600",
     },
 ]
 
@@ -86,7 +86,7 @@ export const projects: Project[] = [
         title: "MES 솔루션 유지보수 및 커스터마이징",
         category: "mes",
         description: "기존 MES 솔루션의 유지보수와 고객사별 요구사항에 맞춘 커스터마이징 업무",
-        technologies: ["C#", "WinForms", "MS-SQL", "DevExpress", "ActiveReports", "Windows IIS"],
+        technologies: ["C#", "WinForms", "MS-SQL", "DevExpress", "ActiveReports", "Windows Server"],
         achievements: [
             "10개이상 고객사 성공적 구축",
             "10년간 무중단 서비스 운영",

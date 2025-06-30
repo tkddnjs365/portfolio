@@ -37,7 +37,6 @@ export const AboutSection = ({darkMode}: AboutSectionProps) => {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     {/*
                        order-2 : Flexbox나 Grid 레이아웃에서 이 요소의 표시 순서를 두 번째로 설정
-
                     */}
                     <motion.div
                         initial={{opacity: 0, x: -50}}
@@ -61,8 +60,7 @@ export const AboutSection = ({darkMode}: AboutSectionProps) => {
                     >
                         <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">10년의 MES 솔루션 개발 경험</h3>
                         <p className="text-base md:text-lg mb-4 md:mb-6 leading-relaxed">
-                            (주)트러시스시스템에서 MES 솔루션의 유지보수, 커스터마이징, 그리고 확장 개발을 담당하며 제조업체들의
-                            디지털 전환을 지원해왔습니다.
+                            (주)트러시스시스템에서 MES 솔루션의 유지보수, 커스터마이징, 그리고 확장 개발을 담당하며 제조업체들의 디지털 전환을 지원해왔습니다.
                         </p>
 
                         {/*
@@ -72,15 +70,15 @@ export const AboutSection = ({darkMode}: AboutSectionProps) => {
                         <div className="space-y-3 md:space-y-4">
                             <div className="flex items-center">
                                 <CheckCircle className="text-green-500 mr-3 w-5 h-5 flex-shrink-0"/>
-                                <span className="text-sm md:text-base">영업, 사양, 자재, 재고, 물류 모듈 전문</span>
+                                <span className="text-sm md:text-base">MES 솔루션 커스터마이징 및 유지보수</span>
+                            </div>
+                            <div className="flex items-center">
+                                <CheckCircle className="text-green-500 mr-3 w-5 h-5 flex-shrink-0"/>
+                                <span className="text-sm md:text-base">영업, 사양, 자재, 재고, 물류 모듈 개발</span>
                             </div>
                             <div className="flex items-center">
                                 <CheckCircle className="text-green-500 mr-3 w-5 h-5 flex-shrink-0"/>
                                 <span className="text-sm md:text-base">다중 고객사 환경에서의 솔루션 배포 및 운영</span>
-                            </div>
-                            <div className="flex items-center">
-                                <CheckCircle className="text-green-500 mr-3 w-5 h-5 flex-shrink-0"/>
-                                <span className="text-sm md:text-base">제조 장비와의 실시간 데이터 연동</span>
                             </div>
                             <div className="flex items-center">
                                 <CheckCircle className="text-green-500 mr-3 w-5 h-5 flex-shrink-0"/>

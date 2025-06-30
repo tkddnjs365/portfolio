@@ -261,7 +261,7 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                                                                     alt={currentImage?.alt || "image"}
                                                                                     width={800} // 실제 이미지 너비
                                                                                     height={450} // 실제 이미지 높이
-                                                                                    className="w-full h-full object-cover rounded-lg"
+                                                                                    className="w-full h-full object-contain rounded-lg"
                                                                                 />
 
 

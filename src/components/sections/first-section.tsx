@@ -6,8 +6,8 @@ import {Mail} from "lucide-react"
 
 export const FirstSection = () => {
     const [typingText, setTypingText] = useState("")
-    const fullText = "개발자"
-    const name = "김개발자김"
+    const fullText = "MES 개발자"
+    const name = "한상원"
 
     // 🌟 랜덤 별 데이터 상태
     const [stars, setStars] = useState<
@@ -104,7 +104,7 @@ export const FirstSection = () => {
                         <span className="border-r-2 border-white animate-pulse">{typingText}</span>
                     </div>
                     <p className="text-base md:text-lg lg:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-                        10년간의 MES 솔루션 개발 경험으로 제조업의 디지털 전환을 이끌어갑니다
+                        10년이상의 MES 솔루션 개발 경험으로 제조업의 디지털 전환을 이끌어갑니다
                     </p>
                     <div className="flex gap-4 justify-center flex-wrap">
                         {/*

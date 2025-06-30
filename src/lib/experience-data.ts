@@ -36,9 +36,10 @@ export const detailedExperiences: DetailedExperience[] = [
         position: "MES 솔루션 개발자",
         description: "MES 솔루션 유지보수, 커스터마이징 및 확장 개발을 담당",
         achievements: [
-            "다중 고객사 MES 솔루션 안정적 운영",
+            "기존 MES 솔루션 기반 신규 고객사 커스터마이징 및 구축",
             "영업/사양/자재/재고/물류 모듈 담당",
             "고객 맞춤형 솔루션 개발",
+            "고객사 피드백에 따른 지속적 유지보수",
         ],
         technologies: [
             "C#",
@@ -59,44 +60,23 @@ export const detailedExperiences: DetailedExperience[] = [
                     {
                         title: "제품생성",
                         description:
-                            "신규 제품 등록 및 제품 정보 관리 시스템으로, 제품 코드, 사양, 가격 등을 체계적으로 관리합니다.",
+                            "신규 제품 등록 및 제품 정보 관리 시스템으로, 제품 코드, 제품사양, 가격 등을 체계적으로 관리합니다.",
                         images: [
                             {
-                                src: "/next.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "제품 등록 화면",
-                                description: "제품 기본정보 입력 화면 - 제품코드, 제품명, 규격, 단위 등 기본 정보를 입력합니다.",
-                            },
-                            {
-                                src: "/vercel.svg?height=300&width=500",
-                                alt: "제품 상세정보 화면",
-                                description: "제품 상세정보 관리 화면 - 제품 이미지, 상세 사양, 가격 정보 등을 관리합니다.",
+                                description: "제품 기본정보 입력 화면 - 제품코드, 제품명, 제품사양, 제품단가 등 기본 정보를 입력합니다.",
                             },
                         ],
                     },
                     {
                         title: "수주등록",
-                        description: "고객 주문을 접수하고 관리하는 시스템으로, 납기 관리와 진행 상황을 실시간으로 추적합니다.",
+                        description: "고객 주문을 접수하고 관리하는 화면입니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "수주 등록 화면",
                                 description: "수주 기본정보 입력 화면 - 고객정보, 제품, 수량, 납기일 등을 입력합니다.",
-                            },
-                            {
-                                src: "/placeholder.svg?height=300&width=500",
-                                alt: "수주 현황 조회",
-                                description: "수주 현황 조회 화면 - 진행 중인 수주의 상태와 납기 현황을 한눈에 확인합니다.",
-                            },
-                        ],
-                    },
-                    {
-                        title: "매출마감등록",
-                        description: "월별/분기별 매출 데이터를 집계하고 분석하여 경영진에게 정확한 매출 현황을 제공합니다.",
-                        images: [
-                            {
-                                src: "/placeholder.svg?height=300&width=500",
-                                alt: "매출 마감 화면",
-                                description: "매출 마감 처리 화면 - 기간별 매출 집계 및 마감 처리를 수행합니다.",
                             },
                         ],
                     },
@@ -111,33 +91,28 @@ export const detailedExperiences: DetailedExperience[] = [
                 features: [
                     {
                         title: "사양등록",
-                        description: "제품별 상세 사양을 등록하고 관리하는 시스템으로, 기술 문서와 도면 정보를 통합 관리합니다.",
+                        description: "제품별 상세 사양을 등록하고 관리하는 시스템으로, 자재구성, 공정라우팅, 공정별 사양을 관리합니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "사양 기본정보 입력",
-                                description: "사양 기본정보 입력 화면 - 사양코드, 사양명, 버전 정보 등을 입력합니다.",
+                                description: "사양 기본정보 입력 화면 - 사양정보를 입력합니다.",
                             },
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "사양 상세정보 관리",
-                                description: "사양 상세정보 관리 화면 - 기술 사양, 품질 기준, 검사 항목 등을 상세히 관리합니다.",
-                            },
-                            {
-                                src: "/placeholder.svg?height=300&width=500",
-                                alt: "사양 도면 관리",
-                                description: "사양 도면 관리 화면 - CAD 도면 파일과 기술 문서를 첨부하고 버전 관리합니다.",
+                                description: "사양 상세정보 관리 화면 - 자재구성, 공정라우팅, 공정별사양 등을 상세히 관리합니다.",
                             },
                         ],
                     },
                     {
-                        title: "BOM생성",
-                        description: "제품 구성 부품의 소요량과 구조를 정의하는 BOM(Bill of Materials)을 생성하고 관리합니다.",
+                        title: "BOM구성",
+                        description: "제품 구성 부품의 소요량과 구조를 정의하는 BOM을 생성하고 관리합니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
-                                alt: "BOM 구조 관리",
-                                description: "BOM 구조 관리 화면 - 제품의 계층 구조와 부품 소요량을 트리 형태로 관리합니다.",
+                                src: "/windows.svg?height=300&width=500",
+                                alt: "BOM 조회",
+                                description: "제품별 구성 부품의 소요량을 관리합니다.",
                             },
                         ],
                     },
@@ -155,7 +130,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "신규 자재 정보를 등록하고 자재 마스터 데이터를 관리하는 시스템입니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "자재 등록 화면",
                                 description: "자재 기본정보 등록 화면 - 자재코드, 자재명, 규격, 단위, 공급업체 정보 등을 입력합니다.",
                             },
@@ -163,7 +138,7 @@ export const detailedExperiences: DetailedExperience[] = [
                     },
                     {
                         title: "자재발주",
-                        description: "자재 소요량 계산부터 발주서 생성까지 자재 구매 프로세스를 자동화합니다.",
+                        description: "발주를 등록 하며 발주서를 생성하는 시스템입니다.",
                         images: [
                             {
                                 src: "/placeholder.svg?height=300&width=500",
@@ -179,7 +154,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/placeholder.svg?height=300&width=500",
                                 alt: "자재 입고 등록",
-                                description: "자재 입고 등록 화면 - 입고 수량, 입고일, 검사 결과 등을 입력하고 재고에 반영합니다.",
+                                description: "자재 입고 등록 화면 - 입고 수량, 입고일 등을 입력하고 재고에 반영합니다.",
                             },
                             {
                                 src: "/placeholder.svg?height=300&width=500",
@@ -189,13 +164,13 @@ export const detailedExperiences: DetailedExperience[] = [
                         ],
                     },
                     {
-                        title: "자재출고",
-                        description: "생산 계획에 따른 자재 출고와 재고 차감을 실시간으로 처리합니다.",
+                        title: "창고이동",
+                        description: "원자재창고 자재를 현장창고로 이동 합니다.",
                         images: [
                             {
                                 src: "/placeholder.svg?height=300&width=500",
                                 alt: "자재 출고 화면",
-                                description: "자재 출고 처리 화면 - 생산 지시에 따른 자재 출고량을 입력하고 재고를 차감합니다.",
+                                description: "자재 출고 처리 화면 - 자재 출고량을 입력하고 재고를 창고로 이동 합니다.",
                             },
                         ],
                     },
@@ -212,17 +187,6 @@ export const detailedExperiences: DetailedExperience[] = [
                                 src: "/placeholder.svg?height=300&width=500",
                                 alt: "자재 사용 현황",
                                 description: "자재 사용 현황 조회 화면 - 기간별, 제품별 자재 사용 현황을 분석합니다.",
-                            },
-                        ],
-                    },
-                    {
-                        title: "자재마감",
-                        description: "월별 자재 재고 실사와 장부 마감을 처리하는 시스템입니다.",
-                        images: [
-                            {
-                                src: "/placeholder.svg?height=300&width=500",
-                                alt: "자재 마감 화면",
-                                description: "자재 마감 처리 화면 - 월말 재고 실사 결과와 장부 재고를 대사하고 마감 처리합니다.",
                             },
                         ],
                     },
@@ -248,7 +212,7 @@ export const detailedExperiences: DetailedExperience[] = [
                 features: [
                     {
                         title: "출고등록",
-                        description: "완제품 출고 처리와 배송 관리를 통합적으로 수행하는 시스템입니다.",
+                        description: "완제품 출고 처리를 통합적으로 수행하는 시스템입니다.",
                         images: [
                             {
                                 src: "/placeholder.svg?height=300&width=500",
@@ -264,12 +228,12 @@ export const detailedExperiences: DetailedExperience[] = [
                     },
                     {
                         title: "제품입고등록",
-                        description: "생산 완료된 제품의 입고 처리와 품질 검사를 관리합니다.",
+                        description: "생산 완료된 제품의 입고를 관리합니다.",
                         images: [
                             {
                                 src: "/placeholder.svg?height=300&width=500",
                                 alt: "제품 입고 화면",
-                                description: "제품 입고 등록 화면 - 생산 완료된 제품의 입고 수량과 품질 검사 결과를 입력합니다.",
+                                description: "제품 입고 등록 화면 - 생산 완료된 제품의 입고를 입력합니다.",
                             },
                         ],
                     },

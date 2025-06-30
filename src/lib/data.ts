@@ -269,26 +269,26 @@ export const clientProjects: ClientProject[] = [
 
 /* project-dashboard */
 export const projectStats: ProjectStats = {
-  totalProjects: clientProjects.length,
-  completedProjects: clientProjects.filter((p) => p.status === "완료").length,
-  ongoingProjects: clientProjects.filter((p) => p.status === "진행중").length,
-  mesProjects: clientProjects.filter((p) => p.type === "MES").length,
-  callSystemProjects: clientProjects.filter((p) => p.type === "Call System").length,
-  totalDuration: "10년",
-  averageProjectDuration: "7개월",
-  clientSatisfaction: "100%",
-  systemTypes: {
-    "영업시스템": clientProjects.filter((p) => p.scope.includes("영업시스템")).length,
-    "사양시스템": clientProjects.filter((p) => p.scope.includes("사양시스템")).length,
-    "자재시스템": clientProjects.filter((p) => p.scope.includes("자재시스템")).length,
-    "물류시스템": clientProjects.filter((p) => p.scope.includes("물류시스템")).length,
-  },
-  yearlyStats: clientProjects.reduce(
-    (acc, project) => {
-      const year = project.period.split(".")[0]
-      acc[year] = (acc[year] || 0) + 1
-      return acc
+    totalProjects: clientProjects.length,
+    completedProjects: clientProjects.filter((p) => p.status === "완료").length,
+    ongoingProjects: clientProjects.filter((p) => p.status === "진행중").length,
+    mesProjects: clientProjects.filter((p) => p.type === "MES").length,
+    callSystemProjects: clientProjects.filter((p) => p.type === "Call System").length,
+    totalDuration: "10년",
+    averageProjectDuration: "7개월",
+    clientSatisfaction: "100%",
+    systemTypes: {
+        "영업시스템": clientProjects.filter((p) => p.scope.includes("영업시스템")).length,
+        "사양시스템": clientProjects.filter((p) => p.scope.includes("사양시스템")).length,
+        "자재시스템": clientProjects.filter((p) => p.scope.includes("자재시스템")).length,
+        "물류시스템": clientProjects.filter((p) => p.scope.includes("물류시스템")).length,
     },
-    {} as Record<string, number>,
-  ),
+    yearlyStats: clientProjects.reduce(
+        (acc, project) => {
+            const year = project.period.split(".")[0]
+            acc[year] = (acc[year] || 0) + 1
+            return acc
+        },
+        {} as Record<string, number>,
+    ),
 }

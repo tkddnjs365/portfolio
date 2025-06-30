@@ -141,7 +141,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "발주를 등록 하며 발주서를 생성하는 시스템입니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "자재 발주 화면",
                                 description: "자재 발주 등록 화면 - 발주 수량, 납기일, 공급업체 선택 및 발주서를 생성합니다.",
                             },
@@ -152,12 +152,12 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "발주한 자재의 입고 처리와 품질 검사 결과를 관리하는 시스템입니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "자재 입고 등록",
                                 description: "자재 입고 등록 화면 - 입고 수량, 입고일 등을 입력하고 재고에 반영합니다.",
                             },
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "입고 검사 관리",
                                 description: "입고 검사 관리 화면 - 품질 검사 항목과 결과를 기록하고 합격/불합격을 판정합니다.",
                             },
@@ -168,7 +168,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "원자재창고 자재를 현장창고로 이동 합니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "자재 출고 화면",
                                 description: "자재 출고 처리 화면 - 자재 출고량을 입력하고 재고를 창고로 이동 합니다.",
                             },
@@ -179,12 +179,12 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "생산 현장에서의 실제 자재 사용량을 기록하고 관리하는 시스템입니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "자재 사용 등록",
                                 description: "자재 사용 등록 화면 - 작업 지시별 실제 자재 사용량을 입력하고 추적합니다.",
                             },
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "자재 사용 현황",
                                 description: "자재 사용 현황 조회 화면 - 기간별, 제품별 자재 사용 현황을 분석합니다.",
                             },
@@ -195,7 +195,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "자재의 입출고 내역을 상세히 추적하고 재고 변동 이력을 관리합니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "자재 수불 현황",
                                 description: "자재 수불 현황 조회 화면 - 자재별 입출고 내역과 재고 변동 추이를 상세히 확인합니다.",
                             },
@@ -215,12 +215,12 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "완제품 출고 처리를 통합적으로 수행하는 시스템입니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "출고 등록 화면",
                                 description: "출고 등록 화면 - 수주 정보를 기반으로 출고할 제품과 수량을 입력하고 출고 처리합니다.",
                             },
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "출고 현황 관리",
                                 description: "출고 현황 관리 화면 - 출고 예정, 출고 완료 상태를 실시간으로 모니터링합니다.",
                             },
@@ -231,7 +231,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "생산 완료된 제품의 입고를 관리합니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "제품 입고 화면",
                                 description: "제품 입고 등록 화면 - 생산 완료된 제품의 입고를 입력합니다.",
                             },
@@ -242,7 +242,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "완제품의 입출고 내역과 재고 현황을 실시간으로 추적 관리합니다.",
                         images: [
                             {
-                                src: "/placeholder.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "제품 수불 현황",
                                 description: "제품 수불 현황 화면 - 제품별 입출고 내역과 현재 재고량을 실시간으로 확인합니다.",
                             },
@@ -280,7 +280,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             "0000 현황을 조회합니다.",
                         images: [
                             {
-                                src: "/next.svg?height=300&width=500",
+                                src: "/windows.svg?height=300&width=500",
                                 alt: "000 조회 화면",
                                 description: "00000 을 조회합니다.",
                             }

@@ -66,10 +66,11 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
         }
     }
 
-    // 첫 번째 항목 펼쳐졌을 때 시스템 자동 세팅
+    // 항목 펼쳐졌을 때 시스템 자동 세팅 해서 첫번째 탭 클릭
     useEffect(() => {
-        if (expandedExperience === 0 && detailedExperiences[0]?.systems?.[0]) {
-            setSelectedSystem(detailedExperiences[0].systems[0])
+        if (expandedExperience !== null && detailedExperiences[expandedExperience]?.systems?.[0]
+        ) {
+            setSelectedSystem(detailedExperiences[expandedExperience].systems[0])
         }
     }, [expandedExperience])
 

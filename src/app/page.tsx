@@ -32,7 +32,6 @@ const ScrollIndicator = () => {
     return (
         /*
          * fixed top-0 left-0 w-full h-1: 화면 상단에 가로로 꽉 찬 얇은 막대
-
          */
         <div
             className="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-600 transform-gpu origin-left z-50"

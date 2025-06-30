@@ -31,14 +31,13 @@ export interface DetailedExperience {
 
 export const detailedExperiences: DetailedExperience[] = [
     {
-        period: "2014 - 2024",
+        period: "2014.08 ~ 진행중",
         company: "(주)트러시스시스템",
         position: "MES 솔루션 개발자",
-        description: "MES 솔루션 유지보수, 커스터마이징 및 확장 개발을 담당하며 제조업체들의 디지털 전환을 지원",
+        description: "MES 솔루션 유지보수, 커스터마이징 및 확장 개발을 담당",
         achievements: [
             "다중 고객사 MES 솔루션 안정적 운영",
             "영업/사양/자재/재고/물류 모듈 담당",
-            "제조 장비 연동 시스템 구축",
             "고객 맞춤형 솔루션 개발",
         ],
         technologies: [
@@ -47,6 +46,7 @@ export const detailedExperiences: DetailedExperience[] = [
             "WinForms",
             "DevExpress",
             "MS-SQL Server",
+            "Windows Server",
         ],
         systems: [
             {
@@ -286,6 +286,46 @@ export const detailedExperiences: DetailedExperience[] = [
                     },
                 ],
             },
+        ],
+    },
+
+    {
+        period: "2024.11 ~ 2025.01",
+        company: "(주)트러시스시스템",
+        position: "Web 개발자",
+        description: "Call System 추가 개발",
+        achievements: [
+            "Call System 조회 화면 추가 개발 담당",
+        ],
+        technologies: [
+            "Spring",
+            "JSP",
+            "MyBatis",
+        ],
+        systems: [
+            {
+                id: "call",
+                title: "콜시스템",
+                description: "고객 관리 시스템",
+                icon: "💼",
+                color: "from-blue-500 to-blue-700",
+                features: [
+                    {
+                        title: "현황1",
+                        description:
+                            "0000 현황을 조회합니다.",
+                        images: [
+                            {
+                                src: "/next.svg?height=300&width=500",
+                                alt: "000 조회 화면",
+                                description: "00000 을 조회합니다.",
+                            }
+                        ],
+                    },
+
+                ],
+            },
+
         ],
     },
 

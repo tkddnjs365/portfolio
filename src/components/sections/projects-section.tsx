@@ -4,6 +4,8 @@ import {AnimatePresence, motion} from "framer-motion"
 import {useState} from "react";
 import {BarChart3, Building2, Calendar} from "lucide-react";
 import {ProjectOutline} from "@/components/ui/project-outline";
+import {ProjectDetailTimeline} from "@/components/ui/project-detail-timeline";
+import {ProjectDashboard} from "@/components/ui/project-dashboard";
 
 interface ProjectsSectionProps {
     darkMode: boolean
@@ -80,14 +82,16 @@ export const ProjectsSection = ({darkMode}: ProjectsSectionProps) => {
                 </div>
 
                 <AnimatePresence mode="wait">
-                    {!showStats && !showTimeline ? (
+                    {showStats ? (
+                        <ProjectDashboard darkMode={darkMode}/>
+                    ) : !showTimeline ? (
                         <ProjectOutline darkMode={darkMode}/>
                     ) : (
-                        <div>
-
-                        </div>
+                        <ProjectDetailTimeline darkMode={darkMode}/>
                     )}
                 </AnimatePresence>
+
+
             </div>
         </section>
     )

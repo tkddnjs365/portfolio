@@ -36,3 +36,28 @@ export interface Project {
   technologies: string[]
   achievements: string[]
 }
+
+/* project-detail-timeline */
+export interface ClientProject {
+  period: string
+  client: string
+  project: string
+  scope: string
+  description: string
+  status: "완료" | "진행중"
+  type: "MES" | "Call System"
+}
+
+/* project-dashboard */
+export interface ProjectStats {
+  totalProjects: number
+  completedProjects: number
+  ongoingProjects: number
+  mesProjects: number
+  callSystemProjects: number
+  totalDuration: string
+  averageProjectDuration: string
+  clientSatisfaction: string
+  systemTypes: Record<string, number>
+  yearlyStats: Record<string, number>
+}

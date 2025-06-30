@@ -1,6 +1,5 @@
 import {
     Briefcase,
-    Building2,
     Car,
     Code,
     Coffee,
@@ -15,7 +14,7 @@ import {
     User,
     Wrench,
 } from "lucide-react"
-import {Category, Certification, NavItem, Project, SkillCategory} from "@/types";
+import {Category, Certification, ClientProject, NavItem, Project, ProjectStats, SkillCategory} from "@/types";
 
 export const navItems: NavItem[] = [
     {id: "home", label: "홈", icon: Home},
@@ -80,41 +79,216 @@ export const categories: Category[] = [
     {id: "all", label: "전체", icon: ThList},
     {id: "mes", label: "MES 솔루션", icon: Wrench},
     {id: "development", label: "개발", icon: Code},
-    {id: "construction", label: "구축", icon: Building2},
 ]
 
 export const projects: Project[] = [
-  {
-    title: "MES 솔루션 유지보수 및 커스터마이징",
-    category: "mes",
-    description: "기존 MES 솔루션의 유지보수와 고객사별 요구사항에 맞춘 커스터마이징 업무",
-    technologies: ["C#", "WinForms", "MS-SQL", "DevExpress", "Crystal Reports"],
-    achievements: [
-      "15개 고객사 성공적 구축",
-      "10년간 무중단 서비스 운영",
-      "고객 맞춤형 기능 구현",
-      "업무 프로세스 최적화",
-    ],
-  },
-  {
-    title: "MES 모바일 개발",
-    category: "development",
-    description: "기존 MES 시스템의 모바일 버전 개발로 현장 접근성 향상",
-    technologies: ["Vue.js", "JavaScript", "REST API", "Mobile UI"],
-    achievements: ["모바일 접근성 확보", "현장 업무 효율성 증대", "실시간 데이터 조회"],
-  },
-  {
-    title: "콜 시스템 화면 개발",
-    category: "development",
-    description: "기존 콜 시스템에 조회화면 추가 개발",
-    technologies: ["Java Spring", "MariaDB", "MyBatis", "JSP"],
-    achievements: ["조회 기능 구현", "사용자 편의성 향상", "데이터 시각화"],
-  },
-  {
-    title: "자동차 시트제조업체 MES 구축",
-    category: "construction",
-    description: "자동차용 시트 제조업체를 위한 전용 MES 시스템 구축 (진행중)",
-    technologies: ["C#", "WinForms", "MS-SQL", "DevExpress"],
-    achievements: ["제조업 특화 시스템 설계", "영업시스템 개발 담당", "고객 요구사항 반영"],
-  },
+    {
+        title: "MES 솔루션 유지보수 및 커스터마이징",
+        category: "mes",
+        description: "기존 MES 솔루션의 유지보수와 고객사별 요구사항에 맞춘 커스터마이징 업무",
+        technologies: ["C#", "WinForms", "MS-SQL", "DevExpress", "ActiveReports", "Windows IIS"],
+        achievements: [
+            "10개이상 고객사 성공적 구축",
+            "10년간 무중단 서비스 운영",
+            "고객 맞춤형 기능 구현",
+            "업무 프로세스 최적화",
+        ],
+    },
+    {
+        title: "MES 모바일 개발",
+        category: "mes",
+        description: "기존 MES 시스템의 모바일 버전 개발로 현장 접근성 향상",
+        technologies: ["Vue.js", "JavaScript", "REST API"],
+        achievements: ["모바일 접근성 확보", "현장 업무 효율성 증대", "실시간 데이터 조회"],
+    },
+    {
+        title: "콜 시스템 화면 개발",
+        category: "development",
+        description: "기존 콜 시스템에 조회화면 추가 개발",
+        technologies: ["Java Spring", "MariaDB", "MyBatis", "JSP"],
+        achievements: ["조회 기능 구현", "사용자 편의성 향상", "데이터 시각화"],
+    },
 ]
+
+/* project-detail-timeline */
+export const clientProjects: ClientProject[] = [
+    {
+        period: "2015.03 ~ 2015.09",
+        client: "AA업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업시스템을 고객사 업무 프로세스에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2015.08 ~ 2016.02",
+        client: "AB업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업시스템을 고객사 업무 프로세스에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2016.04 ~ 2017.01",
+        client: "AC업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업시스템을 고객사 업무 프로세스에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2016.08 ~ 2017.02",
+        client: "AD업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업 및 사양시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2017.11 ~ 2018.11",
+        client: "AB업체",
+        project: "시스템 고도화",
+        scope: "초중종물 시스템 개발",
+        description: "기존 고객사의 시스템 고도화 프로젝트로 초중종물 관리 시스템 개발",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2017.12 ~ 2018.11",
+        client: "AE업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업 및 사양시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2019.05 ~ 2019.10",
+        client: "AF업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업 및 사양시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2020.02 ~ 2020.08",
+        client: "AG업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템, 자재시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업, 사양, 자재시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2020.10 ~ 2021.04",
+        client: "AH업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템, 자재시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업, 사양, 자재시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2021.09 ~ 2022.04",
+        client: "AI업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템, 자재시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업, 사양, 자재시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2022.03 ~ 2022.10",
+        client: "AJ업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템, 자재시스템 커스터마이징",
+        description: "기존 MES 솔루션의 영업, 사양, 자재시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2022.10 ~ 2023.05",
+        client: "내부 프로젝트",
+        project: "MES 모바일 개발",
+        scope: "Vue.js 기반 모바일 시스템 개발",
+        description: "기존 MES 시스템의 모바일 버전 개발로 현장 접근성 향상",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2023.06 ~ 2024.01",
+        client: "AK업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템, 자재시스템, 물류시스템 커스터마이징",
+        description: "기존 MES 솔루션의 전체 시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2023.10 ~ 2024.06",
+        client: "AL업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템, 자재시스템, 물류시스템 커스터마이징",
+        description: "기존 MES 솔루션의 전체 시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2023.11 ~ 진행중",
+        client: "AM업체",
+        project: "자동차용 시트제조업체 MES 구축",
+        scope: "영업시스템 개발",
+        description: "자동차용 시트 제조업체를 위한 전용 MES 시스템 구축 프로젝트",
+        status: "완료",
+        type: "MES",
+    },
+    {
+        period: "2024.10 ~ 진행중",
+        client: "AN업체",
+        project: "스마트공장 지원사업",
+        scope: "영업시스템, 사양시스템, 자재시스템, 물류시스템 커스터마이징",
+        description: "기존 MES 솔루션의 전체 시스템을 고객사 요구사항에 맞게 커스터마이징",
+        status: "진행중",
+        type: "MES",
+    },
+    {
+        period: "2025.01 ~ 2025.03",
+        client: "콜센터업체",
+        project: "콜 시스템 화면 개발",
+        scope: "조회화면 개발",
+        description: "기존 콜 시스템에 조회화면 추가 개발",
+        status: "완료",
+        type: "Call System",
+    },
+]
+
+/* project-dashboard */
+export const projectStats: ProjectStats = {
+  totalProjects: clientProjects.length,
+  completedProjects: clientProjects.filter((p) => p.status === "완료").length,
+  ongoingProjects: clientProjects.filter((p) => p.status === "진행중").length,
+  mesProjects: clientProjects.filter((p) => p.type === "MES").length,
+  callSystemProjects: clientProjects.filter((p) => p.type === "Call System").length,
+  totalDuration: "10년",
+  averageProjectDuration: "7개월",
+  clientSatisfaction: "100%",
+  systemTypes: {
+    "영업시스템": clientProjects.filter((p) => p.scope.includes("영업시스템")).length,
+    "사양시스템": clientProjects.filter((p) => p.scope.includes("사양시스템")).length,
+    "자재시스템": clientProjects.filter((p) => p.scope.includes("자재시스템")).length,
+    "물류시스템": clientProjects.filter((p) => p.scope.includes("물류시스템")).length,
+  },
+  yearlyStats: clientProjects.reduce(
+    (acc, project) => {
+      const year = project.period.split(".")[0]
+      acc[year] = (acc[year] || 0) + 1
+      return acc
+    },
+    {} as Record<string, number>,
+  ),
+}

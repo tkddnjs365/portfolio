@@ -61,3 +61,10 @@ export interface ProjectStats {
   systemTypes: Record<string, number>
   yearlyStats: Record<string, number>
 }
+
+/* contact-section */
+export interface ContactFormData {
+  name: string
+  email: string
+  message: string
+}

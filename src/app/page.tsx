@@ -9,6 +9,7 @@ import {ExperienceSection} from "@/components/sections/experience-section";
 import {SkillsSection} from "@/components/sections/skills-section";
 import {ProjectsSection} from "@/components/sections/projects-section";
 import {ContactSection} from "@/components/sections/contact-section";
+import {Footer} from "@/components/sections/footer";
 
 // 스크롤 컴포넌트 구현
 const ScrollIndicator = () => {
@@ -64,6 +65,7 @@ export default function Home() {
             <SkillsSection darkMode={darkMode}/> {/* 스킬 */}
             <ProjectsSection darkMode={darkMode}/> {/* 프로젝트 */}
             <ContactSection darkMode={darkMode}/> {/* Contact */}
+            <Footer darkMode={darkMode}/>
         </div>
     );
 }

@@ -51,11 +51,72 @@ export const detailedExperiences: DetailedExperience[] = [
         ],
         systems: [
             {
+                id: "mobile",
+                title: "모바일",
+                description: "기존 MES 시스템의 모바일 버전 개발",
+                icon: "📱",
+                color: "from-blue-500 to-blue-700",
+                features: [
+                    {
+                        title: "메인화면",
+                        description:
+                            "모바일 메인 화면입니다.",
+                        images: [
+                            {
+                                src: "/img/모바일_메인화면.png?height=300&width=500",
+                                alt: "메인 화면",
+                                description: "메인 화면 입니다.",
+                            },
+                        ],
+                    },
+                    {
+                        title: "제품재고조회",
+                        description:
+                            "실시간 제품재고를 조회하는 화면입니다.",
+                        images: [
+                            {
+                                src: "/img/모바일_제품재고조회_1.png?height=300&width=500",
+                                alt: "제품재고조회 화면",
+                                description: "고객사별 제품재고를 조회합니다.",
+                            },
+                            {
+                                src: "/img/모바일_제품재고조회_2.png?height=300&width=500",
+                                alt: "제품재고 상세조회 화면",
+                                description: "선택된 고객사의 재고를 제품별로 상세 조회합니다.",
+                            },
+                        ],
+                    },
+                    {
+                        title: "제품출고조회",
+                        description:
+                            "실시간 출고이력을 조회합니다.",
+                        images: [
+                            {
+                                src: "/img/모바일_제품출고현황.png?height=300&width=500",
+                                alt: "제품출고 화면",
+                                description: "기간별 출고이력을 상세 조회합니다.",
+                            },
+                        ],
+                    },
+                    {
+                        title: "수주현황",
+                        description: "기간별 수주를 실시간 조회하는 화면입니다.",
+                        images: [
+                            {
+                                src: "/img/모바일_기간별수주조회.png?height=300&width=500",
+                                alt: "수주 조회 화면",
+                                description: "기간별 수주를 조회하며 전체 합계를 조회합니다.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
                 id: "sales",
                 title: "영업시스템",
                 description: "고객 관리부터 수주, 매출까지 영업 전 과정을 통합 관리하는 시스템",
                 icon: "💼",
-                color: "from-blue-500 to-blue-700",
+                color: "from-green-500 to-green-700",
                 features: [
                     {
                         title: "제품생성",
@@ -87,7 +148,7 @@ export const detailedExperiences: DetailedExperience[] = [
                 title: "사양시스템",
                 description: "제품 사양 정의부터 BOM 관리까지 제품 설계 정보를 체계적으로 관리하는 시스템",
                 icon: "📋",
-                color: "from-green-500 to-green-700",
+                color: "from-purple-500 to-purple-700",
                 features: [
                     {
                         title: "사양등록",
@@ -123,7 +184,7 @@ export const detailedExperiences: DetailedExperience[] = [
                 title: "자재시스템",
                 description: "자재 구매부터 사용까지 전체 자재 흐름을 실시간으로 관리하는 통합 자재 관리 시스템",
                 icon: "📦",
-                color: "from-purple-500 to-purple-700",
+                color: "from-orange-500 to-orange-700",
                 features: [
                     {
                         title: "자재등록",
@@ -208,7 +269,7 @@ export const detailedExperiences: DetailedExperience[] = [
                 title: "물류시스템",
                 description: "완제품의 출고부터 재고 관리까지 물류 전반을 효율적으로 관리하는 시스템",
                 icon: "🚛",
-                color: "from-orange-500 to-orange-700",
+                color: "from-yellow-500 to-yellow-700",
                 features: [
                     {
                         title: "출고등록",
@@ -255,8 +316,8 @@ export const detailedExperiences: DetailedExperience[] = [
 
     {
         period: "2024.11 ~ 2025.01",
-        company: "(주)트러시스시스템",
-        position: "Web 개발자",
+        company: "오플러스",
+        position: "Web 개발",
         description: "Call System 추가 개발",
         achievements: [
             "Call System 조회 화면 추가 개발 담당",
@@ -265,6 +326,8 @@ export const detailedExperiences: DetailedExperience[] = [
             "Spring",
             "JSP",
             "MyBatis",
+            "Ag-Grid",
+            "MariaDB",
         ],
         systems: [
             {
@@ -277,12 +340,12 @@ export const detailedExperiences: DetailedExperience[] = [
                     {
                         title: "현황1",
                         description:
-                            "0000 현황을 조회합니다.",
+                            "현황을 조회합니다.",
                         images: [
                             {
                                 src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "000 조회 화면",
-                                description: "00000 을 조회합니다.",
+                                alt: "조회 화면",
+                                description: "을 조회합니다.",
                             }
                         ],
                     },

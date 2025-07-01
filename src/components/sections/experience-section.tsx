@@ -237,7 +237,7 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                                                     >
                                                                         <div
                                                                             className="flex items-center justify-between mb-3">
-                                                                            <div className="flex items-center flex-col">
+                                                                            <div className="flex items-center">
                                                                                 <h5 className={`text-lg font-bold ${darkMode ? "text-white" : "text-gray-800"}`}>
                                                                                     {currentFeature.title}
                                                                                 </h5>

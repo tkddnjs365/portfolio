@@ -6,7 +6,7 @@ import {Mail} from "lucide-react"
 
 export const FirstSection = () => {
     const [typingText, setTypingText] = useState("")
-    const fullText = "MES 개발자"
+    const fullText = "개발자"
     const name = "한상원"
 
     // 🌟 랜덤 별 데이터 상태

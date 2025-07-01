@@ -218,35 +218,30 @@ export const detailedExperiences: DetailedExperience[] = [
             },
             {
                 id: "logistics",
-                title: "물류시스템",
+                title: "재고/물류시스템",
                 description: "완제품의 출고부터 재고 관리까지 물류 전반을 효율적으로 관리하는 시스템",
                 icon: "🚛",
                 color: "from-yellow-500 to-yellow-700",
                 features: [
                     {
-                        title: "출고등록",
-                        description: "완제품 출고 처리를 통합적으로 수행하는 시스템입니다.",
-                        images: [
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "출고 등록 화면",
-                                description: "출고 등록 화면 - 수주 정보를 기반으로 출고할 제품과 수량을 입력하고 출고 처리합니다.",
-                            },
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "출고 현황 관리",
-                                description: "출고 현황 관리 화면 - 출고 예정, 출고 완료 상태를 실시간으로 모니터링합니다.",
-                            },
-                        ],
-                    },
-                    {
                         title: "제품입고등록",
                         description: "생산 완료된 제품의 입고를 관리합니다.",
                         images: [
                             {
-                                src: "/img/imageAdd.png?height=300&width=500",
+                                src: "/img/Mes/MES_제품입고.png?height=300&width=500",
                                 alt: "제품 입고 화면",
                                 description: "제품 입고 등록 화면 - 생산 완료된 제품의 입고를 입력합니다.",
+                            },
+                        ],
+                    },
+                    {
+                        title: "출고등록",
+                        description: "완제품 출고 처리를 통합적으로 수행하는 시스템입니다.",
+                        images: [
+                            {
+                                src: "/img/Mes/MES_제품출고.png?height=300&width=500",
+                                alt: "출고 등록 화면",
+                                description: "출고 등록 화면 - 수주 정보를 기반으로 출고할 제품과 수량을 입력하고 출고 처리합니다.",
                             },
                         ],
                     },
@@ -264,11 +259,9 @@ export const detailedExperiences: DetailedExperience[] = [
             "Call System 조회 화면 추가 개발 담당",
         ],
         technologies: [
-            "Spring",
-            "JSP",
-            "MyBatis",
-            "Ag-Grid",
+            "Java Spring",
             "MariaDB",
+            "Ag-Grid",
         ],
         systems: [
             {

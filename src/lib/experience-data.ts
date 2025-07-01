@@ -63,7 +63,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             "모바일 메인 화면입니다.",
                         images: [
                             {
-                                src: "/img/모바일_메인화면.png?height=300&width=500",
+                                src: "/img/MesMob/모바일_메인화면.png?height=300&width=500",
                                 alt: "메인 화면",
                                 description: "메인 화면 입니다.",
                             },
@@ -75,12 +75,12 @@ export const detailedExperiences: DetailedExperience[] = [
                             "실시간 제품재고를 조회하는 화면입니다.",
                         images: [
                             {
-                                src: "/img/모바일_제품재고조회_1.png?height=300&width=500",
+                                src: "/img/MesMob/모바일_제품재고조회_1.png?height=300&width=500",
                                 alt: "제품재고조회 화면",
                                 description: "고객사별 제품재고를 조회합니다.",
                             },
                             {
-                                src: "/img/모바일_제품재고조회_2.png?height=300&width=500",
+                                src: "/img/MesMob/모바일_제품재고조회_2.png?height=300&width=500",
                                 alt: "제품재고 상세조회 화면",
                                 description: "선택된 고객사의 재고를 제품별로 상세 조회합니다.",
                             },
@@ -92,7 +92,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             "실시간 출고이력을 조회합니다.",
                         images: [
                             {
-                                src: "/img/모바일_제품출고현황.png?height=300&width=500",
+                                src: "/img/MesMob/모바일_제품출고현황.png?height=300&width=500",
                                 alt: "제품출고 화면",
                                 description: "기간별 출고이력을 상세 조회합니다.",
                             },
@@ -103,7 +103,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "기간별 수주를 실시간 조회하는 화면입니다.",
                         images: [
                             {
-                                src: "/img/모바일_기간별수주조회.png?height=300&width=500",
+                                src: "/img/MesMob/모바일_기간별수주조회.png?height=300&width=500",
                                 alt: "수주 조회 화면",
                                 description: "기간별 수주를 조회하며 전체 합계를 조회합니다.",
                             },
@@ -121,12 +121,12 @@ export const detailedExperiences: DetailedExperience[] = [
                     {
                         title: "제품생성",
                         description:
-                            "신규 제품 등록 및 제품 정보 관리 시스템으로, 제품 코드, 제품사양, 가격 등을 체계적으로 관리합니다.",
+                            "신규 제품 등록 및 제품 정보 관리 시스템으로, 제품 코드, 제품정보, 단가 등을 체계적으로 관리합니다.",
                         images: [
                             {
-                                src: "/img/imageAdd.png?height=300&width=500",
+                                src: "/img/Mes/MES_제품생성관리.png?height=300&width=500",
                                 alt: "제품 등록 화면",
-                                description: "제품 기본정보 입력 화면 - 제품코드, 제품명, 제품사양, 제품단가 등 기본 정보를 입력합니다.",
+                                description: "제품 기본정보 입력 화면 - 제품코드, 제품명, 제품정보, 단가 등 기본 정보를 입력합니다.",
                             },
                         ],
                     },
@@ -135,7 +135,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "고객 주문을 접수하고 관리하는 화면입니다.",
                         images: [
                             {
-                                src: "/img/imageAdd.png?height=300&width=500",
+                                src: "/img/Mes/MES_수주등록.png?height=300&width=500",
                                 alt: "수주 등록 화면",
                                 description: "수주 기본정보 입력 화면 - 고객정보, 제품, 수량, 납기일 등을 입력합니다.",
                             },
@@ -155,25 +155,9 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "제품별 상세 사양을 등록하고 관리하는 시스템으로, 자재구성, 공정라우팅, 공정별 사양을 관리합니다.",
                         images: [
                             {
-                                src: "/img/imageAdd.png?height=300&width=500",
+                                src: "/img/Mes/MES_사양등록.png?height=300&width=500",
                                 alt: "사양 기본정보 입력",
                                 description: "사양 기본정보 입력 화면 - 사양정보를 입력합니다.",
-                            },
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "사양 상세정보 관리",
-                                description: "사양 상세정보 관리 화면 - 자재구성, 공정라우팅, 공정별사양 등을 상세히 관리합니다.",
-                            },
-                        ],
-                    },
-                    {
-                        title: "BOM구성",
-                        description: "제품 구성 부품의 소요량과 구조를 정의하는 BOM을 생성하고 관리합니다.",
-                        images: [
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "BOM 조회",
-                                description: "제품별 구성 부품의 소요량을 관리합니다.",
                             },
                         ],
                     },
@@ -191,7 +175,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "신규 자재 정보를 등록하고 자재 마스터 데이터를 관리하는 시스템입니다.",
                         images: [
                             {
-                                src: "/img/imageAdd.png?height=300&width=500",
+                                src: "/img/Mes/MES_자재생성.png?height=300&width=500",
                                 alt: "자재 등록 화면",
                                 description: "자재 기본정보 등록 화면 - 자재코드, 자재명, 규격, 단위, 공급업체 정보 등을 입력합니다.",
                             },
@@ -202,7 +186,7 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "발주를 등록 하며 발주서를 생성하는 시스템입니다.",
                         images: [
                             {
-                                src: "/img/imageAdd.png?height=300&width=500",
+                                src: "/img/Mes/MES_자재발주.png?height=300&width=500",
                                 alt: "자재 발주 화면",
                                 description: "자재 발주 등록 화면 - 발주 수량, 납기일, 공급업체 선택 및 발주서를 생성합니다.",
                             },
@@ -213,14 +197,9 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "발주한 자재의 입고 처리와 품질 검사 결과를 관리하는 시스템입니다.",
                         images: [
                             {
-                                src: "/img/imageAdd.png?height=300&width=500",
+                                src: "/img/Mes/MES_자재입고.png?height=300&width=500",
                                 alt: "자재 입고 등록",
                                 description: "자재 입고 등록 화면 - 입고 수량, 입고일 등을 입력하고 재고에 반영합니다.",
-                            },
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "입고 검사 관리",
-                                description: "입고 검사 관리 화면 - 품질 검사 항목과 결과를 기록하고 합격/불합격을 판정합니다.",
                             },
                         ],
                     },
@@ -229,36 +208,9 @@ export const detailedExperiences: DetailedExperience[] = [
                         description: "원자재창고 자재를 현장창고로 이동 합니다.",
                         images: [
                             {
-                                src: "/img/imageAdd.png?height=300&width=500",
+                                src: "/img/Mes/MES_자재이동.png?height=300&width=500",
                                 alt: "자재 출고 화면",
                                 description: "자재 출고 처리 화면 - 자재 출고량을 입력하고 재고를 창고로 이동 합니다.",
-                            },
-                        ],
-                    },
-                    {
-                        title: "자재사용",
-                        description: "생산 현장에서의 실제 자재 사용량을 기록하고 관리하는 시스템입니다.",
-                        images: [
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "자재 사용 등록",
-                                description: "자재 사용 등록 화면 - 작업 지시별 실제 자재 사용량을 입력하고 추적합니다.",
-                            },
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "자재 사용 현황",
-                                description: "자재 사용 현황 조회 화면 - 기간별, 제품별 자재 사용 현황을 분석합니다.",
-                            },
-                        ],
-                    },
-                    {
-                        title: "자재수불",
-                        description: "자재의 입출고 내역을 상세히 추적하고 재고 변동 이력을 관리합니다.",
-                        images: [
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "자재 수불 현황",
-                                description: "자재 수불 현황 조회 화면 - 자재별 입출고 내역과 재고 변동 추이를 상세히 확인합니다.",
                             },
                         ],
                     },
@@ -295,17 +247,6 @@ export const detailedExperiences: DetailedExperience[] = [
                                 src: "/img/imageAdd.png?height=300&width=500",
                                 alt: "제품 입고 화면",
                                 description: "제품 입고 등록 화면 - 생산 완료된 제품의 입고를 입력합니다.",
-                            },
-                        ],
-                    },
-                    {
-                        title: "제품수불",
-                        description: "완제품의 입출고 내역과 재고 현황을 실시간으로 추적 관리합니다.",
-                        images: [
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "제품 수불 현황",
-                                description: "제품 수불 현황 화면 - 제품별 입출고 내역과 현재 재고량을 실시간으로 확인합니다.",
                             },
                         ],
                     },

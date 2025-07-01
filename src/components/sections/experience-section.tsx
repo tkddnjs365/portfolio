@@ -237,9 +237,15 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                                                     >
                                                                         <div
                                                                             className="flex items-center justify-between mb-3">
-                                                                            <h5 className={`text-lg font-bold ${darkMode ? "text-white" : "text-gray-800"}`}>
-                                                                                {currentFeature.title}
-                                                                            </h5>
+                                                                            <div className="flex items-center flex-col">
+                                                                                <h5 className={`text-lg font-bold ${darkMode ? "text-white" : "text-gray-800"}`}>
+                                                                                    {currentFeature.title}
+                                                                                </h5>
+                                                                                <h5 className="pl-8 text-sm font-bold text-red-700">
+                                                                                    [ 본 UI는 업무 경험을 기반으로 재구성한 화면 예시입니다 ]
+                                                                                </h5>
+                                                                            </div>
+
                                                                             <div
                                                                                 className="flex items-center gap-2 text-sm text-gray-500">
                                                                                 {selectedImageIndex + 1} / {currentFeature.images.length}

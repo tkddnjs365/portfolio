@@ -34,7 +34,7 @@ export const detailedExperiences: DetailedExperience[] = [
         period: "2014.08 ~ 진행중",
         company: "(주)트러시스시스템",
         position: "MES 솔루션 개발자",
-        description: "MES 솔루션 유지보수, 커스터마이징 및 확장 개발을 담당",
+        description: "기존 시스템 유지보수 및 신규 기능 개발, 고객사 맞춤 커스터마이징 담당",
         achievements: [
             "기존 MES 솔루션 기반 신규 고객사 커스터마이징 및 구축",
             "영업/사양/자재/재고/물류 모듈 담당",

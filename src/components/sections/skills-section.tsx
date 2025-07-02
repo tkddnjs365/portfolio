@@ -177,7 +177,7 @@ export const SkillsSection = ({darkMode}: SkillsSectionProps) => {
                     >
                         <h4 className="text-lg font-bold mb-3">🚀 지속적인 학습과 성장</h4>
                         <p className={`text-sm leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-600"}`}>
-                            10년간 MES 솔루션 개발 경험을 바탕으로, 현재는 웹 개발 기술과 최신 프레임워크를 학습하며 기술 스택을
+                            10년간 MES 솔루션 개발 경험을 바탕으로, 현재는 새로운 기술과 최신 프레임워크를 학습하며 기술 스택을
                             확장하고 있습니다. 새로운 도전을 통해 더 나은 개발자로 성장하고자 합니다.
                         </p>
                     </div>

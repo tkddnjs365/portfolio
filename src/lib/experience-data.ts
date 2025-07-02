@@ -263,31 +263,7 @@ export const detailedExperiences: DetailedExperience[] = [
             "MariaDB",
             "Ag-Grid",
         ],
-        systems: [
-            {
-                id: "call",
-                title: "콜시스템",
-                description: "고객 관리 시스템",
-                icon: "💼",
-                color: "from-blue-500 to-blue-700",
-                features: [
-                    {
-                        title: "현황1",
-                        description:
-                            "현황을 조회합니다.",
-                        images: [
-                            {
-                                src: "/img/imageAdd.png?height=300&width=500",
-                                alt: "조회 화면",
-                                description: "을 조회합니다.",
-                            }
-                        ],
-                    },
-
-                ],
-            },
-
-        ],
+        systems: [],
     },
 
     // 나중에 다른 경력 추가 가능

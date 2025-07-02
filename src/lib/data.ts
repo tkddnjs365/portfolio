@@ -102,9 +102,9 @@ export const projects: Project[] = [
         achievements: ["모바일 접근성 확보", "현장 업무 효율성 증대", "실시간 데이터 조회"],
     },
     {
-        title: "콜 시스템 화면 개발",
+        title: "CRM 시스템 화면 개발",
         category: "development",
-        description: "기존 콜 시스템에 조회화면 추가 개발",
+        description: "기존 CRM 시스템에 조회화면 추가 개발",
         technologies: ["Java Spring", "MariaDB", "Ag-Grid"],
         achievements: ["조회 기능 구현", "사용자 편의성 향상", "데이터 시각화"],
     },
@@ -258,12 +258,12 @@ export const clientProjects: ClientProject[] = [
     },
     {
         period: "2025.01 ~ 2025.03",
-        client: "콜센터업체",
-        project: "콜 시스템 화면 개발",
+        client: "(주)오플러스",
+        project: "CRM 시스템 화면 개발",
         scope: "조회화면 개발",
-        description: "기존 콜 시스템에 조회화면 추가 개발",
+        description: "기존 CRM 시스템에 조회화면 추가 개발",
         status: "완료",
-        type: "Call System",
+        type: "CRM",
     },
 ]
 
@@ -273,7 +273,7 @@ export const projectStats: ProjectStats = {
     completedProjects: clientProjects.filter((p) => p.status === "완료").length,
     ongoingProjects: clientProjects.filter((p) => p.status === "진행중").length,
     mesProjects: clientProjects.filter((p) => p.type === "MES").length,
-    callSystemProjects: clientProjects.filter((p) => p.type === "Call System").length,
+    callSystemProjects: clientProjects.filter((p) => p.type === "CRM").length,
     totalDuration: "10년",
     averageProjectDuration: "7개월",
     clientSatisfaction: "100%",

@@ -252,11 +252,11 @@ export const detailedExperiences: DetailedExperience[] = [
 
     {
         period: "2024.11 ~ 2025.01",
-        company: "오플러스",
+        company: "(주)오플러스",
         position: "Web 개발",
-        description: "Call System 추가 개발",
+        description: "CRM (Call System) 추가 개발",
         achievements: [
-            "Call System 조회 화면 추가 개발 담당",
+            "CRM 조회 화면 추가 개발 담당",
         ],
         technologies: [
             "Java Spring",

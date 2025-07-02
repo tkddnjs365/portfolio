@@ -45,7 +45,7 @@ export interface ClientProject {
   scope: string
   description: string
   status: "완료" | "진행중"
-  type: "MES" | "Call System"
+  type: "MES" | "CRM"
 }
 
 /* project-dashboard */

@@ -53,10 +53,10 @@ export const MainSection = () => {
     }
 
     const skills = [
-        {icon: Code, text: "10년 이상 제조·현장 중심 MES 솔루션 개발"},
-        {icon: Database, text: "영업, 사양, 자재, 재고, 물류 모듈 전문"},
-        {icon: Users, text: "고객사 맞춤 솔루션 운영 및 기능 확장"},
-        {icon: Settings, text: "C#, WinForms, DevExpress 기반 UI/UX"}
+        {icon: Code, text: "10년 이상 MES 솔루션 구축 및 운영 경험"},
+        {icon: Users, text: "고객 맞춤형 기능 설계 및 지속적인 개선"},
+        {icon: Database, text: "영업, 사양, 자재, 재고, 물류 주요 업무 모듈 경험"},
+        {icon: Settings, text: "C#, WinForms, DevExpress 기반 UI/UX 개발"}
     ]
 
     return (
@@ -113,7 +113,7 @@ export const MainSection = () => {
                             </span>
                         </div>
                         <p className="text-lg md:text-xl lg:text-2xl mb-2 max-w-4xl mx-auto leading-relaxed">
-                            10년 이상의 경험을 통해 꾸준히 성장해왔습니다.
+                            10년 이상의 개발 경험을 바탕으로 꾸준히 성장해왔습니다.
                         </p>
                         <p className="text-lg md:text-xl lg:text-2xl mb-2 max-w-4xl mx-auto leading-relaxed">
                            변화에 민감하게 대응하며, 더 나은 방향을 위해 오늘도 배우고 고민합니다.
@@ -134,14 +134,14 @@ export const MainSection = () => {
                                 다양한 고객사 요구사항을 바탕으로 기능 구현 및 기술 개선을 수행해왔습니다.
                             </p>
 
-                            <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+                            <div className="grid md:grid-cols-2 gap-3 md:gap-6">
                                 {skills.map((skill, index) => (
                                     <motion.div
                                         key={index}
                                         initial={{opacity: 0, x: -20}}
                                         animate={{opacity: 1, x: 0}}
                                         transition={{duration: 0.5, delay: 1 + index * 0.1}}
-                                        className="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300"
+                                        className="flex items-center p-2 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300"
                                     >
                                         <div
                                             className="mr-4 p-2 bg-gradient-to-r from-blue-700 to-purple-800 rounded-lg">

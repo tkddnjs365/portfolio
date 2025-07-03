@@ -126,7 +126,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_제품생성관리.png?height=300&width=500",
                                 alt: "제품 등록 화면",
-                                description: "제품 기본정보 입력 화면 - 제품코드, 제품명, 제품정보, 단가 등 기본 정보를 입력합니다.",
+                                description: "제품코드, 제품명, 제품정보, 단가 등 기본 정보를 입력하여 신규 제품을 생성하며 기존 제품에 대해서 REV생성 또는 수정등록 합니다.",
                             },
                         ],
                     },
@@ -137,7 +137,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_수주등록.png?height=300&width=500",
                                 alt: "수주 등록 화면",
-                                description: "수주 기본정보 입력 화면 - 고객정보, 제품, 수량, 납기일 등을 입력합니다.",
+                                description: "제품을 추가 하여 수주 정보를 입력 후 저장 하여 수주를 생성 합니다.",
                             },
                         ],
                     },
@@ -157,7 +157,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_사양등록.png?height=300&width=500",
                                 alt: "사양 기본정보 입력",
-                                description: "사양 기본정보 입력 화면 - 사양정보를 입력합니다.",
+                                description: "사양부서에서 제품에 대한 제품정보, 사양정보, 자재구성, 공정라우팅, 공정별사양을 등록 합니다. 등록된 자재구성으로 BOM을 생성합니다.",
                             },
                         ],
                     },
@@ -177,7 +177,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_자재생성.png?height=300&width=500",
                                 alt: "자재 등록 화면",
-                                description: "자재 기본정보 등록 화면 - 자재코드, 자재명, 규격, 단위, 공급업체 정보 등을 입력합니다.",
+                                description: "자재를 생성 후 발주 고객사 추가, 단가를 추가 합니다.",
                             },
                         ],
                     },
@@ -188,7 +188,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_자재발주.png?height=300&width=500",
                                 alt: "자재 발주 화면",
-                                description: "자재 발주 등록 화면 - 발주 수량, 납기일, 공급업체 선택 및 발주서를 생성합니다.",
+                                description: "고객사별 발주를 생성하며 발주서를 생성합니다.",
                             },
                         ],
                     },
@@ -199,7 +199,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_자재입고.png?height=300&width=500",
                                 alt: "자재 입고 등록",
-                                description: "자재 입고 등록 화면 - 입고 수량, 입고일 등을 입력하고 재고에 반영합니다.",
+                                description: "발주 건에 대해서 입고 수량, 입고일 등을 입력하고 재고에 반영합니다.",
                             },
                         ],
                     },
@@ -210,7 +210,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_자재이동.png?height=300&width=500",
                                 alt: "자재 출고 화면",
-                                description: "자재 출고 처리 화면 - 자재 출고량을 입력하고 재고를 창고로 이동 합니다.",
+                                description: "자재 출고량을 입력하고 재고를 창고로 이동 합니다.",
                             },
                         ],
                     },
@@ -230,7 +230,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_제품입고.png?height=300&width=500",
                                 alt: "제품 입고 화면",
-                                description: "제품 입고 등록 화면 - 생산 완료된 제품의 입고를 입력합니다.",
+                                description: "생산 완료된 제품의 입고를 입력합니다.",
                             },
                         ],
                     },
@@ -241,7 +241,7 @@ export const detailedExperiences: DetailedExperience[] = [
                             {
                                 src: "/img/Mes/MES_제품출고.png?height=300&width=500",
                                 alt: "출고 등록 화면",
-                                description: "출고 등록 화면 - 수주 정보를 기반으로 출고할 제품과 수량을 입력하고 출고 처리합니다.",
+                                description: "수주 정보를 기반으로 출고할 제품과 수량을 입력하고 출고 처리합니다.",
                             },
                         ],
                     },
@@ -257,6 +257,8 @@ export const detailedExperiences: DetailedExperience[] = [
         description: "CRM (Call System) 추가 개발",
         achievements: [
             "CRM 조회 화면 추가 개발 담당",
+            "고객별 통화 이력 조회 개발",
+            "조회 화면을 기존 Html 테이블에서 Ag-Grid 기반 그리드로 전면 변경 개발",
         ],
         technologies: [
             "Java Spring",

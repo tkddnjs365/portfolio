@@ -11,14 +11,12 @@ import {
     Mail,
     Palette,
     Server,
-    User,
     Wrench,
 } from "lucide-react"
 import {Category, Certification, ClientProject, NavItem, Project, ProjectStats, SkillCategory} from "@/types";
 
 export const navItems: NavItem[] = [
     {id: "home", label: "홈", icon: Home},
-    {id: "about", label: "소개", icon: User},
     {id: "experience", label: "경력 & 시스템", icon: Briefcase},
     {id: "skills", label: "기술", icon: Code},
     {id: "projects", label: "프로젝트", icon: Folder},

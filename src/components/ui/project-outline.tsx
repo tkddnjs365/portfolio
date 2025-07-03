@@ -63,8 +63,9 @@ export const ProjectOutline = ({darkMode}: ProjectOutlineProps) => {
                             transition={{duration: 0.5, delay: index * 0.1}}
                             className={`backdrop-blur-md bg-white/10 border border-white/20 rounded-lg p-6 hover:scale-105 transition-all duration-300 ${darkMode ? "text-white" : "text-gray-800"}`}
                         >
-                            <h3 className={"text-xl font-bold mb-3"}>{project.title}</h3>
-                            <p className={"mb-4 opacity-80"}>{project.description}</p>
+                            <h3 className={"text-xl font-bold mb-1"}>{project.title}</h3>
+                            <div className={`h-0.5 w-full mb-3 ${darkMode ? "bg-blue-200" : "bg-gray-400"}`} />
+                            <p className={"mb-3 opacity-80"}>{project.description}</p>
 
                             <div className={"mb-4"}>
                                 <h4 className={"font-semibold mb-2"}>사용기술 :</h4>

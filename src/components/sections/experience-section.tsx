@@ -1,8 +1,8 @@
 "use client"
 
-import {useEffect, useState} from "react"
+import React, {useEffect, useState} from "react"
 import {AnimatePresence, motion} from "framer-motion"
-import {ArrowRight, ChevronDown, ChevronLeft, ChevronRight, ChevronUp} from "lucide-react"
+import {ArrowRight, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Github} from "lucide-react"
 import type {TechSystem} from "@/lib/experience-data"
 import {detailedExperiences} from "@/lib/experience-data"
 import Image from "next/image";
@@ -15,7 +15,7 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
     // 선택된 시스템 (초기값은 첫 번째 시스템)
     const [selectedSystem, setSelectedSystem] = useState<TechSystem | null>(detailedExperiences[0]?.systems?.[0] || null)
     // 펼쳐진 경험 항목 인덱스
-    const [expandedExperience, setExpandedExperience] = useState<number | null>(0)
+    const [expandedExperience, setExpandedExperience] = useState<number | null>(1)
     // 선택된 기능(feature)의 인덱스
     const [selectedFeatureIndex, setSelectedFeatureIndex] = useState(0)
     // 선택된 이미지의 인덱스
@@ -110,7 +110,7 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                 {/* 경력 기본 정보 */}
                                 <div
                                     className={`backdrop-blur-md bg-white/10 border border-white/20 rounded-lg p-6 cursor-pointer hover:bg-white/15 transition-all duration-300 ${darkMode ? "text-white" : "text-gray-800"}`}
-                                    onClick={() => toggleExperience(index)}
+                                    onClick={exp.company === "(주)트러시스시스템" ? () => toggleExperience(index) : undefined}
                                 >
                                     {/* 경력 정보 */}
                                     <div className="flex items-center justify-between">
@@ -119,11 +119,13 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                                 className="px-3 py-1 bg-blue-500 text-white rounded-full text-sm">{exp.period}</span>
                                             <h3 className="text-xl font-bold">{exp.company}</h3>
                                         </div>
-                                        {expandedExperience === index ? (
-                                            <ChevronUp className="w-5 h-5"/>
-                                        ) : (
-                                            <ChevronDown className="w-5 h-5"/>
-                                        )}
+                                        {exp.company === "(주)트러시스시스템" ? (
+                                            expandedExperience === index ? (
+                                                <ChevronUp className="w-5 h-5"/>
+                                            ) : (
+                                                <ChevronDown className="w-5 h-5"/>
+                                            )
+                                        ) : null}
                                     </div>
 
                                     <h4 className="text-lg font-semibold mb-2">{exp.position}</h4>
@@ -146,13 +148,76 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                                   className="px-2 py-1 bg-gray-500/20 rounded text-xs">{tech}</span>
                                         ))}
                                     </div>
+
+                                    {exp.company === "개인 학습 (MES-WEB)" ? (
+                                        <div className="mt-6 pt-4 border-t border-white/20">
+                                            <div
+                                                className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+                                                {/* Live Demo Button */}
+                                                <a
+                                                    href="https://mes-web.vercel.app/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="group relative flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg min-w-[140px] overflow-hidden"
+                                                >
+                                                    {/* 배경 애니메이션 */}
+                                                    <div
+                                                        className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                                                    {/* 아이콘과 텍스트 */}
+                                                    <div className="relative flex items-center gap-2">
+                                                        <div
+                                                            className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
+                                                            <span className="text-xs">🌐</span>
+                                                        </div>
+                                                        <span className="font-semibold">Visit Site</span>
+                                                    </div>
+
+                                                    {/* 우측 화살표 애니메이션 */}
+                                                    <div
+                                                        className="relative ml-auto transform group-hover:translate-x-1 transition-transform duration-300">
+                                                        <ArrowRight className="w-4 h-4"/>
+                                                    </div>
+                                                </a>
+
+                                                {/* GitHub Button */}
+                                                <a
+                                                    href="https://github.com/tkddnjs365/portfolio/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="group relative flex items-center gap-3 px-6 py-3 bg-slate-600/80 hover:bg-slate-500/90 border border-slate-500/50 hover:border-slate-400/70 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 backdrop-blur-sm min-w-[140px] overflow-hidden"
+                                                >
+                                                    <div
+                                                        className="absolute inset-0 bg-gradient-to-r from-slate-500/20 to-slate-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                                                    <div className="relative flex items-center gap-2">
+                                                        <div
+                                                            className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
+                                                            <Github className="w-3 h-3"/>
+                                                        </div>
+                                                        <span className="font-semibold">GitHub</span>
+                                                    </div>
+
+                                                    <div
+                                                        className="relative ml-auto transform group-hover:translate-x-1 transition-transform duration-300">
+                                                        <ArrowRight className="w-4 h-4"/>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            {/* 부가 정보 */}
+                                            <div className="mt-4 text-sm opacity-70">
+                                                <p>💡 최신 웹 기술을 활용한 MES 시스템 학습 프로젝트</p>
+                                            </div>
+                                        </div>
+                                    ) : null}
                                 </div>
 
                                 {/* 상세 시스템 정보 
                                    AnimatePresence : 요소가 DOM에서 사라질 때도 애니메이션을 적용하게 해주는 컴포넌트
                                 */}
                                 <AnimatePresence>
-                                    {/* 첫번째 항목 자동 오픈 */}
+                                    {/* 트러시스 항목 자동 오픈 */}
                                     {expandedExperience === index && exp.systems && (
                                         <motion.div
                                             initial={{opacity: 0, height: 0}}

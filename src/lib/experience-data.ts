@@ -31,6 +31,26 @@ export interface DetailedExperience {
 
 export const detailedExperiences: DetailedExperience[] = [
     {
+        period: "2025.07 ~ 진행중",
+        company: "개인 학습 (MES-WEB)",
+        position: "Web 개발",
+        description: "기존 MES 운영 경험을 바탕으로 최신 웹 기술을 학습하며 개발 중인 프로젝트입니다.",
+        achievements: [
+            "목적 : 최신 웹 기술 스택 학습 및 적용",
+            "특징 : 반응형 디자인, 사용자 친화적 UI/UX",
+            "지속적 개발 및 기능 확장 중",
+        ],
+        technologies: [
+            "Next.js",
+            "TypeScript",
+            "Supabase",
+            "PostgreSQL",
+            "Ag-Grid",
+        ],
+        systems: [],
+    },
+
+    {
         period: "2014.08 ~ 진행중",
         company: "(주)트러시스시스템",
         position: "MES 솔루션 개발자",

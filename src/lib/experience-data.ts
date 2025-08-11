@@ -43,9 +43,10 @@ export const detailedExperiences: DetailedExperience[] = [
         technologies: [
             "Next.js",
             "TypeScript",
-            "Supabase",
-            "PostgreSQL",
+            "Spring Boot",
+            "MariaDB",
             "Ag-Grid",
+            "MyBatis",
         ],
         systems: [],
     },

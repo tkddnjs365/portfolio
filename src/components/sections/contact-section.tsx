@@ -61,7 +61,7 @@ export const ContactSection = ({darkMode}: ContactSectionProps) => {
                         </div>
 
                         <div className="mt-8 w-96">
-                            <a href="/pdf/이력서.pdf" download className="w-full block">
+                            <a href="/pdf/이력서_한상원.pdf" download className="w-full block">
                                 <button
                                     className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
                                     <Download className="w-4 h-4"/>

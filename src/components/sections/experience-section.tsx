@@ -154,31 +154,31 @@ export const ExperienceSection = ({darkMode}: ExperienceSectionProps) => {
                                             <div
                                                 className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
                                                 {/* Live Demo Button */}
-                                                <a
-                                                    href="https://mes-web.vercel.app/"
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="group relative flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg min-w-[140px] overflow-hidden"
-                                                >
-                                                    {/* 배경 애니메이션 */}
-                                                    <div
-                                                        className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                                {/*<a*/}
+                                                {/*    href="https://mes-web.vercel.app/"*/}
+                                                {/*    target="_blank"*/}
+                                                {/*    rel="noopener noreferrer"*/}
+                                                {/*    className="group relative flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg min-w-[140px] overflow-hidden"*/}
+                                                {/*>*/}
+                                                {/*    /!* 배경 애니메이션 *!/*/}
+                                                {/*    <div*/}
+                                                {/*        className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>*/}
 
-                                                    {/* 아이콘과 텍스트 */}
-                                                    <div className="relative flex items-center gap-2">
-                                                        <div
-                                                            className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
-                                                            <span className="text-xs">🌐</span>
-                                                        </div>
-                                                        <span className="font-semibold">Visit Site</span>
-                                                    </div>
+                                                {/*    /!* 아이콘과 텍스트 *!/*/}
+                                                {/*    <div className="relative flex items-center gap-2">*/}
+                                                {/*        <div*/}
+                                                {/*            className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">*/}
+                                                {/*            <span className="text-xs">🌐</span>*/}
+                                                {/*        </div>*/}
+                                                {/*        <span className="font-semibold">Visit Site</span>*/}
+                                                {/*    </div>*/}
 
-                                                    {/* 우측 화살표 애니메이션 */}
-                                                    <div
-                                                        className="relative ml-auto transform group-hover:translate-x-1 transition-transform duration-300">
-                                                        <ArrowRight className="w-4 h-4"/>
-                                                    </div>
-                                                </a>
+                                                {/*    /!* 우측 화살표 애니메이션 *!/*/}
+                                                {/*    <div*/}
+                                                {/*        className="relative ml-auto transform group-hover:translate-x-1 transition-transform duration-300">*/}
+                                                {/*        <ArrowRight className="w-4 h-4"/>*/}
+                                                {/*    </div>*/}
+                                                {/*</a>*/}
 
                                                 {/* GitHub Button */}
                                                 <a

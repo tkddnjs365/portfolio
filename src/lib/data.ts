@@ -2,7 +2,6 @@ import {
     Briefcase,
     Car,
     Code,
-    Coffee,
     Database,
     Folder,
     Globe,
@@ -30,7 +29,9 @@ export const skillCategories: SkillCategory[] = [
         skills: [
             {name: "C# (WinForms)", icon: Code},
             {name: "DevExpress", icon: Palette},
-            {name: "Java Spring", icon: Coffee},
+            {name: "Java", icon: Code},
+            {name: "Spring Boot", icon: Code},
+            {name: "Flutter", icon: Code},
             {name: "MS-SQL", icon: Database},
             {name: "Windows Server IIS", icon: Server},
         ],
@@ -50,11 +51,25 @@ export const skillCategories: SkillCategory[] = [
 
 export const certifications: Certification[] = [
     {
-        name: "운전면허 1종",
-        issuer: "경찰청",
-        date: "2015.05",
-        icon: Car,
-        color: "from-purple-500 to-purple-600",
+        name: "SQLD",
+        issuer: "한국데이터산업진흥원",
+        date: "2022.06",
+        icon: Database,
+        color: "from-green-500 to-green-600",
+    },
+    {
+        name: "정보처리기사",
+        issuer: "한국산업인력공단",
+        date: "2025.12",
+        icon: Code,
+        color: "from-blue-500 to-blue-600",
+    },
+    {
+        name: "정보처리산업기사",
+        issuer: "한국산업인력공단",
+        date: "2025.12",
+        icon: Code,
+        color: "from-blue-500 to-blue-600",
     },
     {
         name: "정보처리기능사",
@@ -64,11 +79,11 @@ export const certifications: Certification[] = [
         color: "from-blue-500 to-blue-600",
     },
     {
-        name: "SQLD",
-        issuer: "한국데이터산업진흥원",
-        date: "2022.06",
-        icon: Database,
-        color: "from-green-500 to-green-600",
+        name: "운전면허 1종",
+        issuer: "경찰청",
+        date: "2015.05",
+        icon: Car,
+        color: "from-purple-500 to-purple-600",
     },
 ]
 
@@ -262,6 +277,15 @@ export const clientProjects: ClientProject[] = [
         description: "기존 CRM 시스템에 조회화면 추가 개발",
         status: "완료",
         type: "CRM",
+    },
+    {
+        period: "2025.10 ~ 2025.12",
+        client: "SK 하이닉스",
+        project: "M14 차세대 제조시스템 확산 구축 MES 개발",
+        scope: "SendFab, JAVA, Oracle",
+        description: "SendFab 업무 분석 및 테스트",
+        status: "완료",
+        type: "MES",
     },
 ]
 

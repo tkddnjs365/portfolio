@@ -49,10 +49,27 @@ export const detailedExperiences: DetailedExperience[] = [
             "MyBatis",
         ],
         systems: [],
+    }, {
+        period: "2025.10 ~ 진행중",
+        company: "(주)포비스",
+        position: "Backend Developer",
+        description: "MQTT, NATS 프로토콜 기반 파일 전송 시스템 개발",
+        achievements: [
+            "Spring Boot 기반 MQTT, NATS 파일 수신 서버 개발",
+            "HiveMQ 브로커 및 NATS Server 자동 설치 및 실행 환경 구성",
+            "Flutter 클라이언트에서 MQTT, NATS 파일 송신 기능 개발",
+        ],
+        technologies: [
+            "Spring Boot",
+            "Flutter",
+            "HiveMQ Client",
+            "MQTT",
+            "NATS",
+        ],
+        systems: [],
     },
-
     {
-        period: "2014.08 ~ 진행중",
+        period: "2014.08 ~ 2025.09",
         company: "(주)트러시스시스템",
         position: "MES 솔루션 개발자",
         description: "기존 시스템 유지보수 및 신규 기능 개발, 고객사 맞춤 커스터마이징 담당",

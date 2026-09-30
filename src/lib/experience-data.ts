@@ -31,26 +31,24 @@ export interface DetailedExperience {
 
 export const detailedExperiences: DetailedExperience[] = [
     {
-        period: "2025.07 ~ 진행중",
-        company: "개인 학습 (MES-WEB)",
-        position: "Web 개발",
-        description: "기존 MES 운영 경험을 바탕으로 최신 웹 기술을 학습하며 개발 중인 프로젝트입니다.",
+        period: "2026.04 ~ 진행중",
+        company: "(주)포비스",
+        position: "운영 및 개발",
+        description: "SK 하이닉스 SmartTTTM 운영 및 개발",
         achievements: [
-            "목적 : 최신 웹 기술 스택 학습 및 적용",
-            "특징 : 반응형 디자인, 사용자 친화적 UI/UX",
-            "지속적 개발 및 기능 확장 중",
+            "SmartTTTM 시스템 운영 및 개발",
         ],
         technologies: [
-            "Next.js",
-            "TypeScript",
-            "Spring Boot",
-            "MariaDB",
-            "Ag-Grid",
-            "MyBatis",
+            "C#",
+            ".NET Framework",
+            "WinForms",
+            "Java",
+            "Oracle",
+            "Infragistics",
         ],
         systems: [],
     }, {
-        period: "2025.10 ~ 진행중",
+        period: "2026.01 ~ 2026.04",
         company: "(주)포비스",
         position: "Backend Developer",
         description: "MQTT, NATS 프로토콜 기반 파일 전송 시스템 개발",
@@ -70,8 +68,8 @@ export const detailedExperiences: DetailedExperience[] = [
     },
     {
         period: "2014.08 ~ 2025.09",
-        company: "(주)트러시스시스템",
-        position: "MES 솔루션 개발자",
+        company: "(주)트러시스",
+        position: "MES 솔루션 개발",
         description: "기존 시스템 유지보수 및 신규 기능 개발, 고객사 맞춤 커스터마이징 담당",
         achievements: [
             "기존 MES 솔루션 기반 신규 고객사 커스터마이징 및 구축",
@@ -87,6 +85,8 @@ export const detailedExperiences: DetailedExperience[] = [
             "MS-SQL Server",
             "Windows Server",
         ],
+        systems: [],
+        /*
         systems: [
             {
                 id: "mobile",
@@ -286,6 +286,7 @@ export const detailedExperiences: DetailedExperience[] = [
                 ],
             },
         ],
+         */
     },
 
     {
